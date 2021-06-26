@@ -1,4 +1,9 @@
-# NextJS vs Gatsby
+---
+title: NextJS vs Gatsby
+slug: nextjs-vs-gatsby
+featured_image: nextjs-vs-gatsby.jpeg
+date: "2021-06-25 12:40:36"
+---
 
 ## Which one wins?
 
