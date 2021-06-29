@@ -87,7 +87,7 @@ export default function Home({ posts }) {
 export const getStaticProps = async () => {
   const sortPosts = () => {
     const allPosts = fs.readdirSync("posts").map((filename) => {
-      const file = fs.readdirSync(path.join("posts", filename)).toString();
+      const file = fs.readFileSync(path.join("posts", filename)).toString();
 
       const postData = matter(file);
       return {
@@ -99,10 +99,10 @@ export const getStaticProps = async () => {
       };
     });
 
-    return (
-      allPosts.sort((a, b) =>
-        new moment(a.date).format("YYYY-MM_DD HH:mn:ss")
-      ) < new moment(b.date).format("YYYY-MM_DD HH:mn:ss")
+    return allPosts.sort(
+      (a, b) =>
+        new moment(a.date).format("YYYY-MM_DD HH:mn:ss") <
+        new moment(b.date).format("YYYY-MM_DD HH:mn:ss")
     );
   };
 
