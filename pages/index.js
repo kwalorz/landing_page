@@ -20,14 +20,14 @@ export default function Home({ posts }) {
           </header>
           <div className="content">
             <p>
-              A responsive site template designed by HTML5 UP
+              This is a layout converted to
               <br />
-              and released under the Creative Commons.
+              Next JS from basic HTML/CSS
             </p>
             <ul className="actions">
               <li>
                 <a href="#one" className="button next scrolly">
-                  Get Started
+                  See Articles
                 </a>
               </li>
             </ul>

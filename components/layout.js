@@ -4,7 +4,7 @@ export default function Layout(props) {
       {/* Header */}
       <header id="header" className="alt">
         <a href="index.html" className="logo">
-          <strong>Forty</strong> <span>by HTML5 UP</span>
+          <strong>Next JS Conversion</strong>
         </a>
         <nav>
           <a href="#menu">Menu</a>
@@ -113,35 +113,31 @@ export default function Layout(props) {
         <div className="inner">
           <ul className="icons">
             <li>
-              <a href="#" className="icon brands alt fa-twitter">
-                <span className="label">Twitter</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="icon brands alt fa-facebook-f">
-                <span className="label">Facebook</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="icon brands alt fa-instagram">
-                <span className="label">Instagram</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" className="icon brands alt fa-github">
+              <a
+                href="https://github.com/kwalorz/landing_page"
+                target="_blank"
+                rel="noopener"
+                alt="github_profile"
+                className="icon brands alt fa-github"
+              >
                 <span className="label">GitHub</span>
               </a>
             </li>
             <li>
-              <a href="#" className="icon brands alt fa-linkedin-in">
+              <a
+                href="https://www.linkedin.com/in/kevin-walorz-1441b4b6/"
+                target="_blank"
+                rel="noopener"
+                alt="linkedIn_profile"
+                className="icon brands alt fa-linkedin-in"
+              >
                 <span className="label">LinkedIn</span>
               </a>
             </li>
           </ul>
           <ul className="copyright">
-            <li>© Untitled</li>
             <li>
-              Design: <a href="https://html5up.net">HTML5 UP</a>
+              Design/Inspiration: <a href="https://html5up.net">HTML5 UP</a>
             </li>
           </ul>
         </div>
