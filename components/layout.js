@@ -4,11 +4,8 @@ export default function Layout(props) {
       {/* Header */}
       <header id="header" className="alt">
         <a href="index.html" className="logo">
-          <strong>Next JS Conversion</strong>
+          <strong>Next JS Website Conversion</strong>
         </a>
-        <nav>
-          <a href="#menu">Menu</a>
-        </nav>
       </header>
       {/* Menu */}
       <nav id="menu">
@@ -82,14 +79,14 @@ export default function Layout(props) {
               <div className="contact-method">
                 <span className="icon solid alt fa-envelope" />
                 <h3>Email</h3>
-                <a href="#">information@untitled.tld</a>
+                <a href="#">kmwalorz@gmail.com</a>
               </div>
             </section>
             <section>
               <div className="contact-method">
                 <span className="icon solid alt fa-phone" />
                 <h3>Phone</h3>
-                <span>(000) 000-0000 x12387</span>
+                <span>(781) 985-4659</span>
               </div>
             </section>
             <section>
@@ -97,9 +94,9 @@ export default function Layout(props) {
                 <span className="icon solid alt fa-home" />
                 <h3>Address</h3>
                 <span>
-                  1234 Somewhere Road #5432
+                  555 Boston Rd
                   <br />
-                  Nashville, TN 00000
+                  Boston, MA 02021
                   <br />
                   United States of America
                 </span>

@@ -59,24 +59,14 @@ export default function Home({ posts }) {
         <section id="two">
           <div className="inner">
             <header className="major">
-              <h2>Massa libero</h2>
+              <h2>Project Description</h2>
             </header>
             <p>
-              Nullam et orci eu lorem consequat tincidunt vivamus et sagittis
-              libero. Mauris aliquet magna magna sed nunc rhoncus pharetra.
-              Pellentesque condimentum sem. In efficitur ligula tate urna.
-              Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor.
-              Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis
-              libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra
-              et feugiat tempus.
+              This is a landing page that has been converted and optimized for
+              Next JS. Posts are linked to articles written in .md files. Files
+              are then parsed and compiled using 'Marked' and 'gray-matter'
+              packages.
             </p>
-            <ul className="actions">
-              <li>
-                <a href="landing.html" className="button next">
-                  Get Started
-                </a>
-              </li>
-            </ul>
           </div>
         </section>
       </div>
