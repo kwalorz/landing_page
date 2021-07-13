@@ -1,25 +1,30 @@
 import Head from "next/head";
 import Layout from "../components/layout";
+import Image from "next/image";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import marked from "marked";
 
 export default function PostPage({ postData, content }) {
+  const imgSrc = `/assets/images/${postData.featured_image}`;
   return (
     <Layout>
       <Head>
-        <title>Kevin's Gallery</title>
+        <title>Gallery</title>
       </Head>
 
       <div id="main" className="alt">
         <section id="one">
-          <div className="inner">
+          <div className="inner" style={{ position: "relative" }}>
             <header className="major">
               <h1>{postData.title}</h1>
             </header>
-            <span className="image main">
-              <img src={`/assets/images/${postData.featured_image}`} alt="" />
+            <span
+              className="image"
+              style={{ position: "relative", height: "50vh", width: "100%" }}
+            >
+              <Image src={imgSrc} alt="" layout="fill" objectFit="cover" />
             </span>
             <div dangerouslySetInnerHTML={{ __html: content }} />
           </div>

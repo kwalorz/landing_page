@@ -8,7 +8,7 @@ export default function Layout(props) {
         </a>
       </header>
       {/* Menu */}
-      <nav id="menu">
+      {/* <nav id="menu">
         <ul className="links">
           <li>
             <a href="index.html">Home</a>
@@ -35,7 +35,7 @@ export default function Layout(props) {
             </a>
           </li>
         </ul>
-      </nav>
+      </nav> */}
       {props.children}
       <section id="contact">
         <div className="inner">
@@ -114,6 +114,7 @@ export default function Layout(props) {
                 href="https://github.com/kwalorz/landing_page"
                 target="_blank"
                 rel="noopener"
+                rel="noreferrer"
                 alt="github_profile"
                 className="icon brands alt fa-github"
               >
@@ -125,6 +126,7 @@ export default function Layout(props) {
                 href="https://www.linkedin.com/in/kevin-walorz-1441b4b6/"
                 target="_blank"
                 rel="noopener"
+                rel="noreferrer"
                 alt="linkedIn_profile"
                 className="icon brands alt fa-linkedin-in"
               >

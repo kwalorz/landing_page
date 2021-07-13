@@ -10,9 +10,9 @@ export default function Home({ posts }) {
   return (
     <Layout>
       <Head>
-        <title>Kevin's Gallery</title>
+        <title>Gallery</title>
       </Head>
-      {/* Banner */}
+
       <section id="banner" className="major">
         <div className="inner">
           <header className="major">
@@ -34,28 +34,23 @@ export default function Home({ posts }) {
           </div>
         </div>
       </section>
-      {/* Main */}
+
       <div id="main">
-        {/* One */}
         <section id="one" className="tiles">
-          {/*Loop over posts*/}
           {posts.map((post) => (
-            <article>
-              <span className="image">
-                <img src={`/assets/images/${post.featured_image}`} alt="" />
-              </span>
+            <article key={post.title.toString()}>
+              <span className="image"></span>
               <header className="major">
                 <h3>
                   <Link href={`/${post.slug}`} className="link">
                     {post.title}
                   </Link>
                 </h3>
-                {/* <p>Ipsum dolor sit amet</p> */}
               </header>
             </article>
           ))}
         </section>
-        {/* Two */}
+
         <section id="two">
           <div className="inner">
             <header className="major">
@@ -64,7 +59,7 @@ export default function Home({ posts }) {
             <p>
               This is a landing page that has been converted and optimized for
               Next JS. Posts are linked to articles written in .md files. Files
-              are then parsed and compiled using 'Marked' and 'gray-matter'
+              are then parsed and compiled using Marked and gray-matter
               packages.
             </p>
           </div>
