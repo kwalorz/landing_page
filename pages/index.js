@@ -37,8 +37,8 @@ export default function Home({ posts }) {
 
       <div id="main">
         <section id="one" className="tiles">
-          {posts.map((post) => (
-            <article key={post.title.toString()}>
+          {posts.map((post, index) => (
+            <article key={index}>
               <span className="image"></span>
               <header className="major">
                 <h3>

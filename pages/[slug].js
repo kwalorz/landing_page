@@ -24,7 +24,7 @@ export default function PostPage({ postData, content }) {
               className="image"
               style={{ position: "relative", height: "50vh", width: "100%" }}
             >
-              <Image src={imgSrc} alt="" layout="fill" objectFit="cover" />
+              <Image src={imgSrc} alt="" layout="fill" objectFit="contain" />
             </span>
             <div dangerouslySetInnerHTML={{ __html: content }} />
           </div>

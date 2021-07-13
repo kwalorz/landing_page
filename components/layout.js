@@ -7,35 +7,6 @@ export default function Layout(props) {
           <strong>Next JS Website Conversion</strong>
         </a>
       </header>
-      {/* Menu */}
-      {/* <nav id="menu">
-        <ul className="links">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="landing.html">Landing</a>
-          </li>
-          <li>
-            <a href="generic.html">Generic</a>
-          </li>
-          <li>
-            <a href="elements.html">Elements</a>
-          </li>
-        </ul>
-        <ul className="actions stacked">
-          <li>
-            <a href="#" className="button primary fit">
-              Get Started
-            </a>
-          </li>
-          <li>
-            <a href="#" className="button fit">
-              Log In
-            </a>
-          </li>
-        </ul>
-      </nav> */}
       {props.children}
       <section id="contact">
         <div className="inner">
@@ -113,8 +84,7 @@ export default function Layout(props) {
               <a
                 href="https://github.com/kwalorz/landing_page"
                 target="_blank"
-                rel="noopener"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 alt="github_profile"
                 className="icon brands alt fa-github"
               >
@@ -125,8 +95,7 @@ export default function Layout(props) {
               <a
                 href="https://www.linkedin.com/in/kevin-walorz-1441b4b6/"
                 target="_blank"
-                rel="noopener"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 alt="linkedIn_profile"
                 className="icon brands alt fa-linkedin-in"
               >
